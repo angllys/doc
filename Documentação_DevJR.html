@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação para Programadores Júnior</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #b6b6b6c7;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 15px;
+            color: #374151;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #4b5563;
+        }
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            table-layout: auto;
+        }
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #374151;
+            text-align: left;
+            white-space: nowrap;
+        }
+        th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        tr:hover td {
+            background-color: #d4d4d4;  /* Cor de fundo suave quando passar o mouse */
+            transition: background-color 0.3s ease; /* Efeito suave de transição */
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background: linear-gradient(to right, #b6b6b6c7, #b6b6b6c7); /* Degradê suave para um visual moderno */
+            padding: 20px 0;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            width: 100%;
+            bottom: 0; /* Coloca o rodapé no final da tela */
+            left: 0;            
+        }
+
+        footer a {
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+        }
+
+        footer .container {
+            max-width: 1024px;
+            padding: 0 20px;
+            margin: 0 auto; /* Garante que o conteúdo do rodapé fique centralizado */
+        }
+
+        footer .text-center {
+            text-align: center;
+        }
+
+        footer .space-x-6 {
+            gap: 1.5rem;
+        }
+
+        footer .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        footer .text-sm {
+            font-size: 0.875rem;
+        }
+
+        footer .text-base {
+            font-size: 1rem;
+        }
+
+        footer .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        footer .text-gray-400 {
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h1>Documentação para Programadores Júnior em Delphi 7</h1>
+    </div>
+
+    <div class="section">
+        <h2>1. Introdução</h2>
+        <h4>Esta documentação foi criada para orientar programadores júnior que estão começando a trabalhar com Delphi 7.</h4>
+        <h4>O foco é ensinar conceitos fundamentais de análise de negócio, análise de sistema e os passos necessários para executar demandas de desenvolvimento de forma eficiente e organizada.</h4>
+    </div>    
+
+    <div class="section">
+        <h2>2. Análise de Negócio</h2>
+        <p>A análise de negócio é o processo de identificar as necessidades do cliente, entender o contexto do problema e propor soluções que agreguem valor ao negócio.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Entendimento do Problema</td><td>Compreender o desafio ou necessidade que o cliente está enfrentando.</td></tr>
+                <tr><td>Reunião com o Cliente</td><td>Conectar-se com o cliente para discutir problemas, objetivos e expectativas.</td></tr>
+                <tr><td>Definição de Requisitos</td><td>Definir de forma clara os requisitos do sistema para atender às necessidades do cliente.</td></tr>
+                <tr><td>Mapeamento de Processos</td><td>Identificar como os processos atuais funcionam e onde podem ser melhorados.</td></tr>
+                <tr><td>Análise de Impacto</td><td>Avaliar como as mudanças propostas afetarão o negócio e os processos existentes.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. Análise de Sistema</h2>
+        <p>A análise de sistema é a etapa onde transformamos as necessidades do negócio em especificações técnicas, preparando o sistema para ser desenvolvido.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Modelagem de Dados</td><td>Estruturar como os dados serão armazenados e acessados no sistema.</td></tr>
+                <tr><td>Diagrama de Classes</td><td>Representar graficamente as entidades do sistema e suas interações.</td></tr>
+                <tr><td>Definição de Interfaces</td><td>Detalhar como os usuários e sistemas interagem com o software.</td></tr>
+                <tr><td>Definição de Regras de Negócio</td><td>Estabelecer as regras que o sistema deve seguir para garantir operações corretas.</td></tr>
+                <tr><td>Documentação Técnica</td><td>Criar documentos que descrevem a arquitetura do sistema e como ele deve ser implementado.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>4. Passo a Passo para Programadores Júnior</h2>
+        <p>Para programadores que estão começando, é importante seguir alguns passos básicos para garantir que a demanda seja entregue com qualidade:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1. Entender o Requisito</td><td>Leia atentamente a especificação e pergunte ao analista se houver dúvidas.</td></tr>
+                <tr><td>2. Planejar o Código</td><td>Pense na estrutura do código antes de começar a programar.</td></tr>
+                <tr><td>3. Escrever Código Limpo</td><td>Use nomes de variáveis claros e siga as convenções de codificação.</td></tr>
+                <tr><td>4. Testar com Frequência</td><td>Teste cada parte do código para evitar surpresas na entrega final.</td></tr>
+                <tr><td>5. Documentar o Código</td><td>Inclua comentários que expliquem o funcionamento do código.</td></tr>
+                <tr><td>6. Refatorar quando necessário</td><td>Não tenha medo de melhorar o código quando encontrar uma solução mais eficiente.</td></tr>
+            </tbody>
+        </table>
+    </div>    
+
+    <div class="section">
+        <h2>5. Desafio Prático</h2>
+        <p>Crie um sistema simples de cadastro de clientes usando Delphi 7 com as seguintes funcionalidades:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Funcionalidade</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Cadastro de Clientes</td><td>Nome, CPF, Telefone, Endereço e Status (Ativo/Inativo).</td></tr>
+                <tr><td>CRUD</td><td>Edição e Exclusão de Clientes.</td></tr>
+                <tr><td>Função extra</td><td>Listagem de Clientes com filtro por Status.</td></tr>
+                <tr><td>Storage do cadastro</td><td>Persistência dos dados em arquivo texto ou banco de dados (Firebird 2.1) local</td></tr>
+            </tbody>
+        </table>
+        <p></p>
+        <p>Requisitos Técnicos</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>O sistema deve usar a estrutura TForm para interface.</td></tr>
+                <tr><td>O código deve estar separado em unidades (Forms e Classes).</td></tr>
+                <tr><td>Deve haver tratamento de erros para evitar falhas em tempo de execução.</td></tr>                
+            </tbody>
+        </table>                
+    </div>
+
+    <div class="section">
+        <h2>6. Conclusão</h2>
+        <p>Seguindo esses passos e se dedicando ao aprendizado constante, um programador júnior rapidamente se tornará um desenvolvedor mais experiente e confiante. Bons estudos e mãos à obra! 🚀</p>
+        <h3>Prazo de entrega até o dia 12/05/2025 às 12h</h3>
+    </div>    
+
+    <div class="section">
+        <footer class="bg-gradient-to-r from-gray-800 to-gray-700 text-white py-6 mt-12">
+            <div class="container text-center">
+                <p class="text-xl font-semibold mb-4">Angllys Bandeira Soares</p>
+                <p class="text-sm mb-6">Analista de Sistema</p>
+    
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="mailto:angllys.desenvolvimento@gmail.com" class="text-blue-400 hover:text-blue-600 transition duration-300 text-base">Contato: angllys.desenvolvimento@gmail.com</a>
+                </div>
+    
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="https://wa.me/5585987918207?text=Ol%C3%A1%20Angllys" class="text-green-400 hover:text-green-600 transition duration-300 text-base">WhatsApp: 85 98791-8207</a>
+                </div>
+    
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://www.layoutsistemas.com.br/" class="text-indigo-400 hover:text-indigo-600 transition duration-300 text-base" target="_blank">Colaborador na Layout Sistemas</a>
+                </div>
+    
+                <div class="text-sm text-gray-400">
+                    <p>&copy; 2025 Angllys Bandeira Soares. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+    
+</body>
+</html>
